@@ -143,7 +143,7 @@ class Synapse_dataset(Dataset):
             # train all
             filepath = (self.path /'train'/(filename+'.tiff')).as_posix()
             self.files.append(filepath)
-            
+            print(filepath)
             # print('Transform', filename)
             with rasterio.open(filepath, transform = rasterio.Affine(1, 0, 0, 0, 1, 0)) as dataset:
                 self.masks.append(rle_decode(self.csv.loc[filename, 'encoding'], dataset.shape))

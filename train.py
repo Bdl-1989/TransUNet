@@ -62,7 +62,7 @@ if __name__ == "__main__":
     dataset_name = args.dataset
     dataset_config = {
         'Synapse': {
-            'root_path': '../input/transunetcode/requirements.txt',
+            'root_path': '../input/hubmap-kidney-segmentation',
             'list_dir': './',
             'num_classes': 9,
         },
