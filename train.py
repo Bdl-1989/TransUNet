@@ -44,8 +44,8 @@ parser.add_argument('--vit_name', type=str,
                     default='R50+ViT-B_16', help='select one vit model')
 parser.add_argument('--vit_patches_size', type=int,
                     default=16, help='vit_patches_size, default is 16')
-args = parser.parse_args()
-
+# args = parser.parse_args()
+args = parser.parse_known_args()[0]
 
 if __name__ == "__main__":
     if not args.deterministic:

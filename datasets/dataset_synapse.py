@@ -110,7 +110,7 @@ class Synapse_dataset(Dataset):
         # self.data_dir = base_dir
 
         self.path = pathlib.Path(base_dir)
-        self.tiff_ids = tiff_ids   # to define the train ids
+        # self.tiff_ids = tiff_ids   # to define the train ids
         self.overlap = 40
         self.window = 256
         self.transform = transform
