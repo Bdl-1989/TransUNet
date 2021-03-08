@@ -1,3 +1,8 @@
+import sys  
+
+sys.path.append('../input/transunetcode')
+
+
 import argparse
 import logging
 import os
